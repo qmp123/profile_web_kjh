@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>김재환 | Portfolio</title>
+
+    <meta property="og:title" content="김재환 | Portfolio">
+    <meta property="og:description" content="Dedicated to development with VS Code & Unity Engine">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://qmp123.github.io/my_profile_web/">
+    <meta property="og:image" content="https://qmp123.github.io/my_profile_web/thumbnail.png"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-teal: #2d7d81;
+            --bg-gray: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-dark: #333333;
+        }
+
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: var(--bg-gray);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        /* Header Section (from 2nd Image) */
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            color: var(--primary-teal);
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .intro-text {
+            color: #666;
+            font-size: 1rem;
+            max-width: 80% ;
+            margin: 0 auto 20px;
+        }
+
+        header hr {
+            border: 0;
+            height: 2px;
+            background-color: var(--primary-teal);
+            margin: 20px 0;
+        }
+
+        /* Section Styling */
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-teal);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background-color: var(--primary-teal);
+            margin-right: 10px;
+        }
+
+        /* Skills Layout (from 2nd Image) */
+        .skills-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .skill-group {
+            border-bottom: 1px dashed #ddd;
+            padding-bottom: 10px;
+        }
+
+        .skill-group:last-child { border: none; }
+
+        .skill-label {
+            font-weight: bold;
+            color: var(--primary-teal);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #eef4ff;
+            color: #007bff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* Project List */
+        .project-item {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            color: #999;
+            font-size: 0.8rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Kim JaeHwan</h1>
+        <div class="job-title">Game & Web Developer</div>
+        <p class="intro-text">Dedicated to development with VS Code & Unity Engine</p>
+        <hr>
+    </header>
+
+    <section class="section-card">
+        <div class="section-title">주요 프로젝트</div>
+        <div class="project-item">
+            <h4 style="margin:0;">🚀 코딩타자연습 웹 게임</h4>
+            <p style="font-size:0.9rem; color:#666;">한글타자연습의 코딩 버전으로 사용자 취약점을 찾아 피드백 해주는 웹 게임</p>
+        </div>
+        </section>
+
+    <section class="section-card">
+        <div class="section-title">Skills & Expertise</div>
+        <div class="skills-container">
+            <div class="skill-group">
+                <span class="skill-label">Programming Languages</span>
+                <span class="tag">C</span>
+                <span class="tag">Python</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <div class="skill-group">
+                <span class="skill-label">Game Engines</span>
+                <span class="tag">Unity</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Kim JaeHwan | Web Game Developer Portfolio
+    </footer>
+</div>
+
+</body>
+</html>
